@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        tools:ignore="WrongManifestParent" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/icon_delivery"
+        android:label="Order Food"
+        android:roundIcon="@drawable/icon_delivery"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.Payment.ChangeQuantity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerMenu.DetailOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerMenu.OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerMenu.EditUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.DrawerMenu.RePassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Signup.SingupUserPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Signup.SingupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Login.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ItemSelect.ItemGridviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Address.AddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Search.SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Payment.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Payment.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Home.FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Home.StoreItem"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Home.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.Start"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
